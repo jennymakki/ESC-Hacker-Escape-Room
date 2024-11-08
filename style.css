@@ -1,0 +1,675 @@
+* {
+    box-sizing: border-box;
+    font-size: 24px;
+    font-family: "roboto";
+    margin: 0;
+    padding: 0;
+    border-radius: 0%;
+}
+
+.header {
+    background-color: #011827;
+    color: white;
+    width: 100%;
+    height: 5.5rem;
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.header__h1 {
+    font-family: "roboto";
+    font-style: normal;
+    width: 70px;
+    height: 50px;
+    line-height: 25px;
+    font-size: 0.8rem;
+    margin-left: 5px;
+    margin-top: 29px;
+    font-weight: 500;
+}
+
+.header__logo {
+    float: left;
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 110px;
+    height: 80px;
+}
+
+.menuDesktop--hide {
+    display: none;
+}
+
+--
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+    background-color:#011827;
+    position: fixed;
+    height: 93%;
+    width: 90%;
+    padding-top: 35%;
+    margin: 5%; 
+    animation: zoomIn 0.5s, fadeIn 0.7s;
+    z-index: 1;
+  }
+
+  .topnav {
+    text-align: center;
+  }
+
+  .closebtn {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+  }
+ 
+  .topnav a {
+    color: white;
+    background-color: #011827;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 500;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background:#011827;
+    display: block;
+    position: absolute;
+    right: 0;
+    padding-right: 0.7rem;
+    top: 0.3rem;
+    background-color: transparent;
+  }
+  
+  .hamburger {
+    width: 1.5rem;
+  }
+
+  .X {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes zoomIn {
+    0% { scale: 90%; }
+    100% { scale: 100%; }
+  }
+
+.challenges {
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.challenges__mainImage {
+    width: 100%;
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.challenges__buttonOnsite {
+    border: none;
+    border-radius: 4px;
+    color: black;
+    font-size: 0.9em;
+    font-weight: 500;
+    background-color: #8ACFE5;
+    width: 260px;
+    padding: 13px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.challenges__buttonOnlineChallenges {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    text-decoration: underline;
+    color: #36769D;
+    font-weight: bold;
+    font-family: "roboto";
+    padding-top: 5%;
+    align-content: center;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 45px;
+    margin-top: 8px;
+    display: block;
+    font-size: 0.6em;
+    font-weight: 450;
+}
+
+.review {
+    margin-bottom: 50px;
+}
+
+.review__image {
+    float: left;
+    margin-top: 25px;
+    margin-left: 10px;
+    width: 65px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    margin-right: 15px;
+}
+
+.review__text {
+    text-align: left;
+    font-style: italic;
+    font-family: "roboto";
+    height: 100px;
+    width: auto;
+    font-size: 0.8em;
+    padding: 5%;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.reviewer__info {
+    font-size: 0.6em;
+    font-style: normal;
+    font-family: "roboto";
+    margin: 0%;
+    margin-top: 20px;
+}
+
+.reviewDesktop--hide {
+    display: none;
+}
+
+h2 {
+    font: "roboto";
+    text-align: center;
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+
+.theRooms {
+    display: flex;
+    overflow-x: scroll;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.theRooms__article {
+    flex-shrink: 0;
+    width: 300px;
+    height: 360px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px 2px #B6BDB5, 0 2px 3px 0 #B6BDB5;
+
+    margin: 10px;
+}
+
+.theRooms__title {
+    font-size: 0.85em;
+    font-weight: 400;
+    margin-left: 15px;
+    margin-top: 3%;
+    margin-bottom: 0%;
+    box-sizing: border-box;
+    display: block;
+}
+
+.theRooms__starsParticipants {
+    display: flex;
+    margin-left: 5%;
+    padding-right: 5%;
+
+}
+
+.theRooms__participants {
+    font-size: 0.5em;
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+
+.theRooms__roomInfo {
+    font-size: 13px;
+    margin-left: 3%;
+    margin-right: 5%;
+    padding: 3%;
+    margin-bottom: 2%;
+}
+
+.theRooms__bookButton {
+    margin-bottom: 6%;
+    margin-left: 45%;
+    margin-right: 5%;
+    background-color: #E3170A;
+    border: none;
+    border-radius: 4px;
+    padding: 3%;
+    color: white;
+    font-size: 0.6em;
+    align-items: center;
+    width: 50%;
+    font-weight: 500;
+}
+
+.theRooms__image {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.theRooms__stars {
+    width: 34%;
+    height: auto;
+    margin-bottom: 2%;
+    margin-top: 1%;
+}
+
+.story {
+    background-color: #011827;
+    color: #B6BDB5;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1px;
+}
+
+.story__text {
+    padding-top: 1rem;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 20px;
+    text-align: center;
+    font-weight: 300;
+    color: white;
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.story__buttonFullStory {
+    border: 1.5px solid #8ACFE5;
+    border-radius: 4px;
+    color: #8ACFE5;
+    padding: 15px 32px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #011827;
+    width: 260px;
+    margin-bottom: 5%;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+}
+
+.teamwork__image {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    display: block;
+}
+
+.teamwork__h3 {
+    padding-left: 5%;
+    margin-top: 5%;
+    font-size: 1em;
+    padding-right: 5%;
+}
+
+.teamwork__information {
+    padding-left: 5%;
+    padding-right:5%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    font-size: 0.75em;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.teamwork__buttonBook {
+    background-color: #E3170A;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 32px;
+    font-size: 18px;
+    font-weight: 500;
+    width: 250px;
+    height: auto;
+    display: block;
+    align-items: center;
+    margin-left: 5%;
+    margin-bottom: 10%;
+
+}
+
+.venueInfo__image {
+    width: 100%;
+    margin-top: 5%;
+    height: auto;
+    padding-top: 0;
+}
+
+.venueInfo__h3 {
+    padding-left: 5%;
+    margin-top: 5%;
+    font-size: 1em;
+    padding-right: 5%;
+}
+
+.venueInfo__information {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    font-size: 0.75em;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.venueInfo__buttonChallenges {
+    background-color: #E3170A;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 32px;
+    font-size: 18px;
+    font-weight: 500;
+    width: 250px;
+    height: auto;
+    display: block;
+    align-items: center;
+    margin-left: 5%;
+    margin-bottom: 20%;
+}
+
+footer {
+    background-color: #011827;
+    color: white;
+    padding-left: 6%;
+    padding-bottom: 100px;
+    padding-top: 70px;
+}
+
+.footer__h4 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.footer__information {
+    font-size: 18px;
+    padding-bottom: 10%;
+    padding-top: 2%;
+    font-weight: 300;
+    margin-right: 5%;
+}
+
+.footer__links1 {
+    margin-bottom: 30px;
+}
+
+.footer__links,
+.footer__socialMedia {
+    font-weight: 300;
+    font-size: 0.8em;
+    color: white;
+    text-decoration: none;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@media screen and (min-width: 700px) {
+    .topnav {
+        display: none;
+    }
+    
+    .header {
+        height: 150px;
+    }
+
+    .header__logo {
+        width: 150px;
+        height: 90px;
+    }
+
+    .header__h1 {
+        display: flex;
+        width: auto;
+        height: auto;
+        padding-top: 45px;
+        font-size: 36px;
+        font-weight: 400;
+    }
+
+    .menuDesktop--hide {
+        display: flex;
+        list-style: none;
+        align-items: end;
+        justify-content: center;
+        width: 100%;
+        gap: 9%; /* 140px; */
+        padding-top: 0;
+        margin: 0;
+        background-color: #011827;
+        padding-bottom: 20px;
+        border: none;
+    }
+
+    .menu__options {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .challenges__mainImage {
+        height: 450px;
+        object-fit: cover;
+    }
+
+    .challenges__buttons {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        transform: translateY(-60px);
+        font-size: 0.9em;
+    }
+
+    .challenges__buttonOnlineChallenges {
+        color: white;
+        background-color: #E3170A;
+        display: block;
+        font-weight: 500;
+        margin-right: 10px;
+        margin-top: 20px;
+        margin-bottom: 0;
+        width: 260px;
+        font-size: 0.9em;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-radius: 5px;
+        text-decoration: none;
+
+    }
+
+    .challenges__buttonOnsite {
+        display: block;
+        margin-left: 10px;
+    }
+
+    .reviewDesktop--hide {
+        max-width: 500px;
+        display: block;
+    }
+
+    .review {
+        max-width: 500px;
+        display: block;
+    }
+
+    .reviews {
+        display: flex;
+        justify-content: center;
+    }
+
+    .review__image {
+        object-fit: cover;
+    }
+
+    h2 {
+        margin-top: 10px;
+    }
+
+    .theRooms {
+        justify-content: space-evenly;
+    }
+
+    .theRooms__starsParticipants {
+        gap: 100px;
+    }
+
+    .theRooms__article {
+        width: 350px;
+        height: 410px;
+        margin-right: 20px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .story__text {
+        width: 550px;
+    }
+
+    .grid--desktop {
+        display: grid;
+        grid-template-columns: (2);
+        grid-template-rows: (2);
+        height: 1000px;
+        margin-bottom: 150px;
+    }
+
+    .teamwork {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .teamwork__image {
+        object-fit: cover;
+        height: 500px;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .venueInfo {
+        grid-column: 1;
+        grid-row: 2;
+        height: 300px;
+    }
+
+    .venueInfo__image {
+        object-fit: cover;
+        height: 500px;
+        grid-column: 2;
+        grid-row: 2;
+        margin-top: 0;
+    }
+
+    .teamwork,
+    .venueInfo {
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 7%;
+        height: 400px;
+    }
+
+    .teamwork__h3,
+    .venueInfo__h3 {
+        font-size: 1.4em;
+        font-weight: 500;
+    }
+
+
+    .teamwork__information,
+    .venueInfo__information {
+        margin-top: 20px;
+        font-size: 1em;
+        margin-bottom: 6%;
+    }
+
+    .teamwork__buttonBook,
+    .venueInfo__buttonChallenges {
+        font-size: 22px;
+        display: inline-block
+    }
+
+    footer {
+        display: flex;
+        padding-bottom: 130px;
+        padding-top: 130px;
+    }
+
+    .footer__article {
+        width: 30%;
+    }
+
+    .footer__links1 {
+        width: 30%;
+        margin-left: 150px;
+    }
+
+    .footer__links2 {
+        width: 25%;
+        margin-right: 50px;
+        margin-right: 20px;
+    }
+}
+
+    @media screen and (min-width: 1500px) {
+        body {
+            width: 1480px;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: solid;
+            border-width: 10px;
+            border-color: #011827;
+            box-shadow: 0px 4px 8px 0px #B6BDB5, 0px 6px 20px 0px #B6BDB5;
+        } 
+    } 

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title> [ESC] - Escape Rooms</title>
+    <meta name="[ESC] - Escape Rooms" content="HTML, CSS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="topnav">
+        <div id="myLinks">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                <img class="X" src="X.png">
+            <a href="#">Play online</a>
+            <a href="#">Play on-site</a>
+            <a href="#">The story</a>
+            <a href="#">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+            <img class="hamburger" src="hamburger.png">
+        </a>
+    </div>
+    <div class="overlay">
+        <header class="header">
+
+
+            <img class="header__logo" src="ESC-logo.png" alt="ESC">
+            <h1 class="header__h1">Hacker Escape Rooms </h1>
+        </header>
+
+        <nav class="menuDesktop--hide">
+            <li class="menu__options">Play online</a>
+            <li class="menu__options">Play on-site</a>
+            <li class="menu__options">The story</a>
+            <li class="menu__options">Contact us</a>
+        </nav>
+
+        <section>
+            <img class="challenges__mainImage" src="ESC-main-image.png"
+                alt="Man with his back towards the camera hacking on three computer screens">
+            <section class="challenges__buttons">
+                <button class="challenges__buttonOnsite">
+                    On-site challenges
+                </button>
+                <button class="challenges__buttonOnlineChallenges">
+                    Online challenges
+                </button>
+                </secton>
+            </section>
+
+            <section class="reviews">
+                <div class="reviewDesktop--hide">
+                    <img class="review__image" src="John_Doe.png" alt="portrait photo of a man who has left a review">
+                    <p class="review__text">This is a quote about how amazing this place is and how much fun me and my
+                        friends had when we tried it
+                        <br>
+                    <p class="reviewer__info">John Doe, visited us in September 2021</p>
+                </div>
+                <div class="review">
+                    <img class="review__image" src="John_Doe.png" alt="portrait photo of a man who has left a review">
+                    <p class="review__text">This is a quote about how amazing this place is and how much fun me and my
+                        friends had when we tried it
+                        <br>
+                    <p class="reviewer__info">John Doe, visited us in September 2021</p>
+                    </p>
+                </div>
+            </section>
+
+            <h2>Popular challenges right now</h2>
+            <section class="theRooms">
+                <article class="theRooms__article">
+                    <img class="theRooms__image" src="slideshow_image.png"
+                        alt="a picture of the room that can be selected. This picture is of a man with his back towards the camera hacking on three computer screens">
+                    <h5 class="theRooms__title">Title of room (on-site)</h5>
+                    <div class="theRooms__starsParticipants">
+                        <img class="theRooms__stars" src="ESC-stars.png" alt="theRooms__stars">
+                        <p class="theRooms__participants">2-6 participants</p>
+                    </div>
+                    <p class="theRooms__roomInfo">Praeterea ex culpa non invenies unum aut non accusatis unum. Et nihil
+                        inuitam.
+                        Nemo nocere tibi erit, et non inimicos, et.</p>
+                    <button class="theRooms__bookButton">Book this room</button>
+                </article>
+                <article class="theRooms__article">
+                    <img class="theRooms__image" src="slideshow_image.png"
+                        alt="a picture of the room that can be selected. This picture is of a man with his back towards the camera hacking on three computer screens">
+                    <h5 class="theRooms__title">Title of room (on-site)</h5>
+                    <div class="theRooms__starsParticipants">
+                        <img class="theRooms__stars" src="ESC-stars.png" alt="theRooms__stars">
+                        <p class="theRooms__participants">2-6 participants</p>
+                    </div>
+                    <p class="theRooms__roomInfo">Praeterea ex culpa non invenies unum aut non accusatis unum. Et nihil
+                        inuitam. Nemo nocere tibi erit, et non inimicos, et.</p>
+                    <button class="theRooms__bookButton">Book this room</button>
+                </article>
+                <article class="theRooms__article">
+                    <img class="theRooms__image" src="slideshow_image.png"
+                        alt="a picture of the room that can be selected. This picture is of a man with his back towards the camera hacking on three computer screens">
+                    <h5 class="theRooms__title">Title of room (on-site)</h5>
+                    <div class="theRooms__starsParticipants">
+                        <img class="theRooms__stars" src="ESC-stars.png" alt="theRooms__stars">
+                        <p class="theRooms__participants">2-6 participants</p>
+                    </div>
+                    <p class="theRooms__roomInfo">Praeterea ex culpa non invenies unum aut non accusatis unum. Et nihil
+                        inuitam. Nemo nocere tibi erit, et non inimicos, et.</p>
+                    <button class="theRooms__bookButton">Book this room</button>
+                </article>
+            </section>
+
+            <div class="challenges__buttons">
+                <button class="challenges__buttonOnsite">On-site challenges</button>
+                <button class="challenges__buttonOnlineChallenges">Online challenges</button>
+            </div>
+
+            <article class="story">
+                <p class="story__text">Quodsi haberent magnalia inter potentiam et divitas, et non illam quidem haec eo
+                    spectant
+                    haec quoque vos omnino
+                    desit illud quo solo felicitatis libertatisque perficiuntur.</p>
+                <br>
+                <button class="story__buttonFullStory">Read the full story</button>
+            </article>
+
+            <div class="grid--desktop">
+                <img class="teamwork__image" src="ESC-image1.jpeg"
+                    alt="a man and a woman working together on a computer">
+                <article class="teamwork">
+                    <h3 class="teamwork__h3">Play with your friends or build your team stronger at work</h3>
+                    <p class="teamwork__information">Praeterea, ex culpa non invenies unum aut non accusatis unum. Et
+                        nihil
+                        inuitam. Nemo nocere tibi erit, et non
+                        inimicos, et. </p>
+                    <button class="teamwork__buttonBook">Book on-site today</button>
+                </article>
+                <img class="venueInfo__image" src="ESC-image2.jpeg" alt="a woman using a computer">
+                <article class="venueInfo">
+                    <h3 class="venueInfo__h3">Play online or visit our venue for one of our 25 escape rooms</h3>
+                    <p class="venueInfo__information">Praeterea, ex culpa non invenies unum aut non accusatis unum. Et
+                        nihil
+                        inuitam. Nemo nocere tibi erit, et non
+                        inimicos, et.</p>
+                    <button class="venueInfo__buttonChallenges">See all challenges</button>
+                </article>
+            </div>
+            </main>
+
+            <footer>
+                <article class="footer__article">
+                    <h4 class="footer__h4"> [ESC] Hacker Escape Rooms</h4>
+                    <p class="footer__information">Quodsi haberent magnalia inter potentiam et divitias, et non illam
+                        quidem
+                        haec eo
+                        spectant haec quoque vos
+                        omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
+                </article>
+                <div class="footer__links1">
+                    <h4 class="footer__h4"> Site map </h4>
+                    <a href class="footer__links"> The Story </a>
+                    <br>
+                    <a href class="footer__links"> Contact us</a>
+                    <br>
+                    <a href class="footer__links">Legal</a>
+                    <br>
+                    <br>
+                    <a href class="footer__links">Play online </a>
+                    <br>
+                    <a href class="footer__links">Play on-site</a>
+                </div>
+
+                <div class="footer__links2">
+                    <h4 class="footer__h4"> Follow us on </h4>
+                    <a href class="footer__socialMedia">Facebook</a>
+                    <br>
+                    <a href class="footer__socialMedia">Instagram</a>
+                    <br>
+                    <a href class="footer__socialMedia">Twitter</a>
+                </div>
+            </footer>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
