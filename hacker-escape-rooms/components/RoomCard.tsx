@@ -1,45 +1,71 @@
-import Image from "next/image";
-
 type RoomCardProps = {
   title: string;
+  type: string;
   participants: string;
-  description: string;
+  text: string;
+  rating: number;
 };
 
 export default function RoomCard({
   title,
+  type,
   participants,
-  description,
+  text,
+  rating,
 }: RoomCardProps) {
   return (
-    <article className="theRooms__article">
-      <Image
-        className="theRooms__image"
-        src="/slideshow_image.png"
-        alt={title}
-        width={350}
-        height={220}
-      />
+    <article
+      className="
+        min-w-[280px]
+        md:min-w-0
+        bg-white
+        border border-gray-200
+        rounded-lg
+        shadow-sm
+        hover:shadow-md
+        transition
+        flex flex-col
+        overflow-hidden
+      "
+    >
+      <div className="h-40 bg-gray-200" />
 
-      <h5 className="theRooms__title">{title}</h5>
+      <div className="p-4 flex flex-col gap-3 h-full">
 
-      <div className="theRooms__starsParticipants">
-        <Image
-          className="theRooms__stars"
-          src="/ESC-stars.png"
-          alt="Rating"
-          width={120}
-          height={20}
-        />
+        <h5 className="font-semibold text-base">
+          {title} ({type})
+        </h5>
 
-        <p className="theRooms__participants">{participants}</p>
+        <div className="flex items-center justify-between text-sm">
+          <div className="text-[#E3170A]">
+            {"★".repeat(rating)}
+          </div>
+
+          <p className="text-gray-500 text-xs">
+            {participants}
+          </p>
+        </div>
+
+        <p className="text-sm text-gray-600 leading-relaxed">
+          {text}
+        </p>
+
+        <button className="
+          mt-auto
+          bg-[#E3170A]
+          text-white
+          py-2
+          rounded
+          text-sm
+          font-medium
+          hover:bg-[#c91409]
+          transition
+          cursor-pointer
+        ">
+          Book this room
+        </button>
+
       </div>
-
-      <p className="theRooms__roomInfo">{description}</p>
-
-      <button className="theRooms__bookButton">
-        Book this room
-      </button>
     </article>
   );
 }
