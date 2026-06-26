@@ -4,85 +4,59 @@ import { useState } from "react";
 import Image from "next/image";
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
     <>
-      <div className="topnav">
+      <header className="flex h-[88px] w-full items-center bg-[#011827] px-6 text-white">
+         <Image
+          src="/ESC-logo.png"
+          alt="ESC Logo"
+          width={110}
+          height={80}
+          priority
+          className="h-auto w-[110px]"
+        />
+        <h1 className="ml-2 w-[70px] text-sm font-medium leading-6">
+          Hacker Escape Rooms
+        </h1>
+
+        <nav className="ml-auto hidden gap-8 lg:flex font-medium">
+          <a href="#">Play online</a>
+          <a href="#">Play on-site</a>
+          <a href="#">The story</a>
+          <a href="#">Contact</a>
+        </nav>
 
         <button
-          className="icon"
-          onClick={() => setMenuOpen(true)}
+          onClick={() => setOpen(true)}
+          className="ml-auto flex flex-col gap-[4px] lg:hidden"
         >
-          <Image
-            src="/hamburger.png"
-            alt="Open menu"
-            width={40}
-            height={40}
-          />
+          <span className="h-[2px] w-6 bg-white"></span>
+          <span className="h-[2px] w-6 bg-white"></span>
+          <span className="h-[2px] w-6 bg-white"></span>
         </button>
+      </header>
 
-        {menuOpen && (
-          <div id="myLinks">
+      {open && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#011827]">
 
-            <button
-              className="closebtn"
-              onClick={() => setMenuOpen(false)}
-            >
-              <Image
-                src="/X.png"
-                alt="Close menu"
-                width={30}
-                height={30}
-              />
-            </button>
+          <button
+            onClick={() => setOpen(false)}
+            className="absolute right-6 top-6 text-4xl text-white"
+          >
+            ×
+          </button>
 
+          <nav className="flex flex-col items-center gap-10 text-2xl font-medium text-white">
             <a href="#">Play online</a>
             <a href="#">Play on-site</a>
             <a href="#">The story</a>
             <a href="#">Contact</a>
+          </nav>
 
-          </div>
-        )}
-      </div>
-
-      <header className="header">
-
-        <Image
-          className="header__logo"
-          src="/ESC-logo.png"
-          alt="ESC Logo"
-          width={120}
-          height={120}
-        />
-
-        <h1 className="header__h1">
-          Hacker Escape Rooms
-        </h1>
-
-        <nav className="menuDesktop--hide">
-          <ul>
-
-            <li className="menu__options">
-              <a href="#">Play online</a>
-            </li>
-
-            <li className="menu__options">
-              <a href="#">Play on-site</a>
-            </li>
-
-            <li className="menu__options">
-              <a href="#">The story</a>
-            </li>
-
-            <li className="menu__options">
-              <a href="#">Contact us</a>
-            </li>
-
-          </ul>
-        </nav>
-
-      </header>
+        </div>
+      )}
     </>
   );
 }
