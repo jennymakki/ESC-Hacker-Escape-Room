@@ -1,51 +1,49 @@
-import Image from "next/image";
-
 export default function Reviews() {
+  const reviews = [
+    {
+      text: "My friends and I had such a good time when we visited this place!",
+      author: "John Doe, visited September 2021",
+    },
+    {
+      text: "We had an amazing experience and would come back again!",
+      author: "Sarah Smith, visited October 2022",
+    },
+    {
+      text: "Best escape room ever, super immersive and fun puzzles!",
+      author: "Alex Johnson, visited March 2023",
+    },
+  ];
+
   return (
-    <section className="reviews">
+    <section className="flex justify-center px-6 py-12 bg-white">
 
-      <div className="reviewDesktop--hide">
+      <div className="grid gap-6 md:grid-cols-3 max-w-5xl w-full">
 
-        <Image
-          className="review__image"
-          src="/John_Doe.png"
-          alt="John Doe"
-          width={120}
-          height={120}
-        />
+        {reviews.slice(0, 3).map((review, i) => (
+          <div
+            key={i}
+            className="
+              bg-white
+              border border-gray-200
+              rounded-lg
+              p-6
+              shadow-sm
+              hover:shadow-md
+              transition
+              flex flex-col gap-4
+            "
+          >
+            <p className="italic text-gray-800 text-sm md:text-base leading-relaxed">
+              “{review.text}”
+            </p>
 
-        <p className="review__text">
-          This is a quote about how amazing this place is and how much fun me
-          and my friends had when we tried it.
-        </p>
-
-        <p className="reviewer__info">
-          John Doe, visited us in September 2021
-        </p>
-
-      </div>
-
-      <div className="review">
-
-        <Image
-          className="review__image"
-          src="/John_Doe.png"
-          alt="John Doe"
-          width={120}
-          height={120}
-        />
-
-        <p className="review__text">
-          This is a quote about how amazing this place is and how much fun me
-          and my friends had when we tried it.
-        </p>
-
-        <p className="reviewer__info">
-          John Doe, visited us in September 2021
-        </p>
+            <p className="text-xs md:text-sm text-gray-500">
+              {review.author}
+            </p>
+          </div>
+        ))}
 
       </div>
-
     </section>
   );
 }
