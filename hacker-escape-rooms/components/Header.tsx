@@ -20,12 +20,7 @@ export default function Header() {
           />
 
           <h1
-            className="
-  text-lg font-normal leading-tight px-2
-  md:text-xl md:font-normal
-  whitespace-normal
-  break-words
-"
+            className="text-lg font-normal leading-tight px-2 md:text-xl md:font-normal whitespace-normal break-words"
           >
             Hacker Escape Rooms
           </h1>
@@ -41,11 +36,7 @@ export default function Header() {
         </div>
 
         <nav
-          className="
-          hidden md:flex
-          w-full justify-center
-          gap-16 mt-6
-        "
+          className="hidden md:flex w-full justify-center gap-16 mt-6"
         >
           <a className="text-white text-lg" href="#">
             Play online
