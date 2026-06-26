@@ -14,57 +14,26 @@ export default function RoomCard({
   rating,
 }: RoomCardProps) {
   return (
-    <article
-      className="
-        min-w-[280px]
-        md:min-w-0
-        bg-white
-        border border-gray-200
-        rounded-lg
-        shadow-sm
-        hover:shadow-md
-        transition
-        flex flex-col
-        overflow-hidden
-      "
-    >
-      <div className="h-50 bg-gray-200" />
+    <article className="group relative min-w-[280px] md:min-w-0 overflow-hidden rounded-xl border border-cyan-400/20 bg-white/5 backdrop-blur-xl transition-all duration-300 hover:scale-[1.03] hover:border-cyan-300/40 hover:shadow-[0_0_40px_rgba(34,211,238,0.15)]">
+      <div className="h-50" />
 
-      <div className="p-4 flex flex-col gap-3 h-full">
-
-        <h5 className="font-semibold text-base">
-          {title} ({type})
+      <div className="p-5 flex flex-col gap-3 relative">
+        <h5 className="font-semibold text-white tracking-wide">
+          {title} <span className="text-cyan-300">({type})</span>
         </h5>
 
         <div className="flex items-center justify-between text-sm">
-          <div className="text-[#E3170A]">
-            {"★".repeat(rating)}
-          </div>
+          <div className="text-cyan-300">{"★".repeat(rating)}</div>
 
-          <p className="text-gray-500 text-xs">
-            {participants}
-          </p>
+          <p className="text-white/40 text-xs">{participants}</p>
         </div>
 
-        <p className="text-sm text-gray-600 leading-relaxed">
-          {text}
-        </p>
+        <p className="text-sm text-white/70 leading-relaxed">{text}</p>
 
-        <button className="
-          mt-auto
-          bg-[#E3170A]
-          text-white
-          py-2
-          rounded
-          text-sm
-          font-medium
-          hover:bg-[#c91409]
-          transition
-          cursor-pointer
-        ">
-          Book this room
+        <button className="cursor-pointer group relative overflow-hidden rounded border border-red-500 bg-[#E3170A] px-10 py-2 font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(227,23,10,.45)]">
+          <span className="relative z-10">Book this Room</span>
+          <span className="absolute  inset-0 -translate-x-full bg-white/20 transition-transform duration-500 group-hover:translate-x-full" />
         </button>
-
       </div>
     </article>
   );

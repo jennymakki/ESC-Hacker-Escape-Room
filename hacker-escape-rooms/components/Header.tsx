@@ -17,7 +17,8 @@ export default function Header() {
 
   return (
     <>
-<header className="relative w-full overflow-hidden bg-[#011827] text-white border-b border-cyan-400/10">        <div className="absolute left-0 top-0 h-[2px] w-full bg-gradient-to-r from-cyan-400 via-fuchsia-500 to-cyan-400 opacity-80" />
+      <header className="relative w-full overflow-hidden bg-[#011827] text-white border-b border-cyan-400/10">
+        <div className="absolute left-0 top-0 h-[2px] w-full bg-gradient-to-r from-cyan-400 via-fuchsia-500 to-cyan-400 opacity-80" />
 
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute left-20 top-0 h-40 w-40 rounded-full bg-cyan-500/10 blur-[100px]" />
@@ -25,7 +26,11 @@ export default function Header() {
         </div>
 
         <div className="relative mx-auto flex max-w-7xl items-center px-6 py-6">
-<Link href="/" className="group flex flex-1 items-center gap-2 min-w-0">            <Image
+          <Link
+            href="/"
+            className="group flex flex-1 items-center gap-2 min-w-0"
+          >
+            <Image
               src="/ESC-logo.png"
               alt="ESC Logo"
               width={120}
@@ -35,11 +40,14 @@ export default function Header() {
             />
 
             <h1 className="hidden text-lg font-light tracking-[0.15em] text-white transition-all duration-300 group-hover:text-cyan-300 md:block">
-              Hacker <br/> Escape <br/> Rooms
+              Hacker <br /> Escape <br /> Rooms
             </h1>
           </Link>
 
-          <button onClick={() => setOpen(true)} className="group ml-auto flex h-14 w-14 items-center justify-center rounded-full border border-cyan-400/20 bg-white/5 backdrop-blur transition-all duration-300 hover:scale-110 hover:border-cyan-300 hover:bg-cyan-400/10 hover:shadow-[0_0_20px_rgba(34,211,238,.45)] lg:hidden">
+          <button
+            onClick={() => setOpen(true)}
+            className="group ml-auto flex h-14 w-14 items-center justify-center rounded-full border border-cyan-400/20 bg-white/5 backdrop-blur transition-all duration-300 hover:scale-110 hover:border-cyan-300 hover:bg-cyan-400/10 hover:shadow-[0_0_20px_rgba(34,211,238,.45)] lg:hidden"
+          >
             <div className="flex flex-col gap-1.5">
               <span className="h-0.5 w-6 rounded bg-cyan-300 transition-all duration-300 group-hover:w-7" />
               <span className="h-0.5 w-6 rounded bg-cyan-300" />
@@ -74,7 +82,10 @@ export default function Header() {
             <div className="absolute bottom-1/4 right-1/4 h-72 w-72 rounded-full bg-fuchsia-500/20 blur-[120px]" />
           </div>
 
-          <button onClick={() => setOpen(false)} className="absolute right-6 top-6 flex h-14 w-14 items-center justify-center rounded-full border border-cyan-400/30 bg-white/5 backdrop-blur transition-all duration-300 hover:scale-110 hover:border-cyan-300 hover:bg-cyan-400/10 hover:shadow-[0_0_20px_rgba(34,211,238,.5)]">
+          <button
+            onClick={() => setOpen(false)}
+            className="absolute right-6 top-6 flex h-14 w-14 items-center justify-center rounded-full border border-cyan-400/30 bg-white/5 backdrop-blur transition-all duration-300 hover:scale-110 hover:border-cyan-300 hover:bg-cyan-400/10 hover:shadow-[0_0_20px_rgba(34,211,238,.5)]"
+          >
             <X className="h-8 w-8 text-cyan-300" strokeWidth={2.5} />
           </button>
 
