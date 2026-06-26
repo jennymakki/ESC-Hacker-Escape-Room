@@ -2,58 +2,88 @@ import Image from "next/image";
 
 export default function Teamwork() {
   return (
-    <section className="grid--desktop">
+    <section className="py-24 px-6 flex justify-center bg-white">
 
-      <Image
-        className="teamwork__image"
-        src="/ESC-image1.jpeg"
-        alt="Team working together"
-        width={600}
-        height={400}
-      />
+      <div className="max-w-6xl w-full flex flex-col gap-24">
 
-      <article className="teamwork">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
 
-        <h3 className="teamwork__h3">
-          Play with your friends or build your team stronger at work
-        </h3>
+          <Image
+            src="/image1.png"
+            alt="Team working together"
+            width={600}
+            height={400}
+            className="w-full h-auto rounded-xl object-cover shadow-sm"
+          />
 
-        <p className="teamwork__information">
-          Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil
-          inuitam. Nemo nocere tibi erit, et non inimicos.
-        </p>
+          <article className="flex flex-col gap-6">
+            <h3 className="text-2xl md:text-3xl font-semibold leading-tight">
+              Build stronger teams through immersive escape room challenges
+            </h3>
 
-        <button className="teamwork__buttonBook">
-          Book on-site today
-        </button>
+            <p className="text-gray-600 leading-relaxed">
+              Play with your friends or strengthen your team at work. Our escape rooms are designed
+              to challenge communication, creativity, and problem-solving under pressure.  
+              Every mission brings you closer together as you race against the clock to solve puzzles and escape.
+            </p>
 
-      </article>
+            <button className="
+              bg-[#E3170A]
+              text-white
+              px-8 py-4
+              rounded-md
+              font-medium
+              w-fit
+              hover:bg-[#c91409]
+              transition
+              shadow-sm
+              cursor-pointer
+            ">
+              Book on-site today
+            </button>
+          </article>
 
-      <Image
-        className="venueInfo__image"
-        src="/ESC-image2.jpeg"
-        alt="Woman using a computer"
-        width={600}
-        height={400}
-      />
+        </div>
 
-      <article className="venueInfo">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
 
-        <h3 className="venueInfo__h3">
-          Play online or visit our venue for one of our 25 escape rooms
-        </h3>
+          <article className="flex flex-col gap-6 md:order-1">
+            <h3 className="text-2xl md:text-3xl font-semibold leading-tight">
+              Play online or visit our venue with 25+ escape rooms
+            </h3>
 
-        <p className="venueInfo__information">
-          Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil
-          inuitam. Nemo nocere tibi erit, et non inimicos.
-        </p>
+            <p className="text-gray-600 leading-relaxed">
+              Whether you are at home or on-site, every experience is built to immerse you completely.  
+              Solve puzzles, uncover clues, and work together to complete your mission before time runs out.
+            </p>
 
-        <button className="venueInfo__buttonChallenges">
-          See all challenges
-        </button>
+            <button className="
+              bg-[#E3170A]
+              text-white
+              px-8 py-4
+              rounded-md
+              font-medium
+              w-fit
+              hover:bg-[#c91409]
+              transition
+              shadow-sm
+              cursor-pointer
+            ">
+              See all challenges
+            </button>
+          </article>
 
-      </article>
+          <Image
+            src="/image2.png"
+            alt="Woman using a computer"
+            width={600}
+            height={400}
+            className="w-full h-auto rounded-xl object-cover shadow-sm"
+          />
 
+        </div>
+
+      </div>
     </section>
   );
 }

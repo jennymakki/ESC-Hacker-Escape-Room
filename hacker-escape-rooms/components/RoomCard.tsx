@@ -28,7 +28,7 @@ export default function RoomCard({
         overflow-hidden
       "
     >
-      <div className="h-40 bg-gray-200" />
+      <div className="h-50 bg-gray-200" />
 
       <div className="p-4 flex flex-col gap-3 h-full">
 

@@ -1,60 +1,50 @@
 export default function Footer() {
   return (
-    <footer>
+    <footer className="bg-[#011827] text-white py-20 px-6 flex justify-center">
 
-      <article className="footer__article">
+      <div className="max-w-6xl w-full grid md:grid-cols-3 gap-12">
 
-        <h4 className="footer__h4">
-          [ESC] Hacker Escape Rooms
-        </h4>
+        <div className="flex flex-col gap-4">
+          <h4 className="text-lg font-medium">Hacker Escape Rooms</h4>
 
-        <p className="footer__information">
-          Quodsi haberent magnalia inter potentiam et divitias, et non illam
-          quidem haec eo spectant haec quoque vos omnino desit illud quo solo
-          felicitatis libertatisque perficiuntur.
-        </p>
+          <p className="text-gray-300 text-sm leading-relaxed">
+            Where teamwork, problem solving and creativity come together.
+            Join us for immersive escape room experiences online or on-site.
+          </p>
+        </div>
 
-      </article>
+        <div className="flex flex-col gap-3">
+          <h4 className="text-lg font-medium">Site</h4>
 
-      <div className="footer__links1">
+          <a href="#" className="text-gray-300 hover:text-[#8ACFE5] transition text-sm">
+            Play online
+          </a>
+          <a href="#" className="text-gray-300 hover:text-[#8ACFE5] transition text-sm">
+            Play on-site
+          </a>
+          <a href="#" className="text-gray-300 hover:text-[#8ACFE5] transition text-sm">
+            The story
+          </a>
+          <a href="#" className="text-gray-300 hover:text-[#8ACFE5] transition text-sm">
+            Contact us
+          </a>
+        </div>
 
-        <h4 className="footer__h4">
-          Site map
-        </h4>
+        <div className="flex flex-col gap-3">
+          <h4 className="text-lg font-medium">Follow us</h4>
 
-        <a href="#">The Story</a>
-        <br />
-
-        <a href="#">Contact us</a>
-        <br />
-
-        <a href="#">Legal</a>
-        <br />
-        <br />
-
-        <a href="#">Play online</a>
-        <br />
-
-        <a href="#">Play on-site</a>
-
-      </div>
-
-      <div className="footer__links2">
-
-        <h4 className="footer__h4">
-          Follow us on
-        </h4>
-
-        <a href="#">Facebook</a>
-        <br />
-
-        <a href="#">Instagram</a>
-        <br />
-
-        <a href="#">Twitter</a>
+          <a href="#" className="text-gray-300 hover:text-[#8ACFE5] transition text-sm">
+            Instagram
+          </a>
+          <a href="#" className="text-gray-300 hover:text-[#8ACFE5] transition text-sm">
+            Facebook
+          </a>
+          <a href="#" className="text-gray-300 hover:text-[#8ACFE5] transition text-sm">
+            LinkedIn
+          </a>
+        </div>
 
       </div>
-
     </footer>
   );
 }
