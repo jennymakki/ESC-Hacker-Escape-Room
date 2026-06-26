@@ -33,6 +33,10 @@ export default function Reviews() {
               flex flex-col gap-4
             "
           >
+            <div className="flex gap-1 text-[#E3170A] text-lg">
+              ★★★★★
+            </div>
+
             <p className="italic text-gray-800 text-sm md:text-base leading-relaxed">
               “{review.text}”
             </p>
