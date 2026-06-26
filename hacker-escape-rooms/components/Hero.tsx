@@ -12,8 +12,7 @@ export default function Hero() {
       />
 
       <div
-        className="
-        flex flex-col items-center gap-2 mt-4 md:flex-row-reverse md:justify-center md:gap-4 md:mt-0 md:-translate-y-[25px]"
+        className="flex flex-col items-center gap-2 mt-4 md:flex-row-reverse md:justify-center md:gap-4 md:mt-0 md:-translate-y-[25px]"
       >
         <button className="w-[260px] py-4 rounded-[4px] cursor-pointer bg-[#8ACFE5] text-black font-bold text-lg transition-all duration-200 ease-in-out hover:bg-[#74bcd6] hover:scale-[1.03] hover:shadow-lg active:scale-[0.98]"
         >

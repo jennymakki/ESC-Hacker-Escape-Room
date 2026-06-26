@@ -19,35 +19,46 @@ export default function Header() {
             className="h-auto w-[90px] md:w-[130px]"
           />
 
-          <h1
-            className="text-lg font-normal leading-tight px-2 md:text-xl md:font-normal whitespace-normal break-words"
-          >
+          <h1 className=" text-lg md:text-4xl font-normal leading-[1.15] tracking-wide px-2">
             Hacker Escape Rooms
           </h1>
 
           <button
             onClick={() => setOpen(true)}
-            className="ml-auto md:hidden flex flex-col gap-[4px]"
+            className="ml-auto md:hidden flex flex-col gap-2 group"
           >
-            <span className="h-[2px] w-6 bg-white"></span>
-            <span className="h-[2px] w-6 bg-white"></span>
-            <span className="h-[2px] w-6 bg-white"></span>
+            <span className="h-[3px] w-7 bg-[#5f6f7a] rounded transition-all duration-200 group-hover:bg-[#74bcd6]"></span>
+            <span className="h-[3px] w-7 bg-[#8ACFE5] rounded transition-all duration-200 group-hover:bg-[#a6dcf0]"></span>
+            <span className="h-[3px] w-7 bg-[#cfefff] rounded transition-all duration-200 group-hover:bg-white"></span>
           </button>
         </div>
 
-        <nav
-          className="hidden md:flex w-full justify-center gap-16 mt-6"
-        >
-          <a className="text-white text-lg" href="#">
+        <nav className="hidden md:flex w-full justify-center gap-16 mt-6">
+          <a
+            className="text-white text-lg transition-colors duration-200 hover:text-[#8ACFE5]"
+            href="#"
+          >
             Play online
           </a>
-          <a className="text-white text-lg" href="#">
+
+          <a
+            className="text-white text-lg transition-colors duration-200 hover:text-[#8ACFE5]"
+            href="#"
+          >
             Play on-site
           </a>
-          <a className="text-white text-lg" href="#">
+
+          <a
+            className="text-white text-lg transition-colors duration-200 hover:text-[#8ACFE5]"
+            href="#"
+          >
             The story
           </a>
-          <a className="text-white text-lg" href="#">
+
+          <a
+            className="text-white text-lg transition-colors duration-200 hover:text-[#8ACFE5]"
+            href="#"
+          >
             Contact us
           </a>
         </nav>
