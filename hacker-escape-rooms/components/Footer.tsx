@@ -31,7 +31,7 @@ export default function Footer() {
           {[
             ["Play online", "/"],
             ["Play on-site", "/"],
-            ["The story", "/"],
+            ["The story", "/story"],
             ["Contact us", "/contact"],
           ].map(([label, href]) => (
             <Link

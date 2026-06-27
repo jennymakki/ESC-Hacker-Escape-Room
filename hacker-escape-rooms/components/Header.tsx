@@ -11,7 +11,7 @@ export default function Header() {
   const links = [
     ["Play online", "/"],
     ["Play on-site", "/"],
-    ["The story", "/"],
+    ["The story", "/story"],
     ["Contact us", "/contact"],
   ];
 
