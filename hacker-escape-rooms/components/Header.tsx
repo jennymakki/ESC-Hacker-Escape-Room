@@ -9,8 +9,8 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   const links = [
-    ["Play online", "/"],
-    ["Play on-site", "/"],
+    ["Play online", "/challenges"],
+    ["Play on-site", "/challenges"],
     ["The story", "/story"],
     ["Contact us", "/contact"],
   ];

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ContactPage() {
   return (
     <main className="relative min-h-screen bg-[#010b14] text-white flex items-center justify-center px-6 py-24 overflow-hidden">
@@ -26,11 +28,14 @@ export default function ContactPage() {
             <p>+46 123 456 789</p>
           </div>
 
-          <button className="mt-4 group relative overflow-hidden bg-[#E3170A] text-white cursor-pointer px-8 py-4 rounded-md font-bold w-fit transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(227,23,10,.45)]">
-            <span className="relative z-10">View all challenges</span>
+<Link
+  href="/challenges"
+  className="mt-4 group relative inline-block overflow-hidden bg-[#E3170A] text-white cursor-pointer px-8 py-4 rounded-md font-bold w-fit transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(227,23,10,.45)]"
+>
+  <span className="relative z-10">View all challenges</span>
 
-            <span className=" absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-500 group-hover:translate-x-full" />
-          </button>
+  <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-500 group-hover:translate-x-full" />
+</Link>
         </section>
 
         <section className="relative bg-black/40 backdrop-blur-xl border border-cyan-400/20 rounded-xl p-8 flex flex-col gap-5 shadow-[0_0_40px_rgba(34,211,238,0.08)]">

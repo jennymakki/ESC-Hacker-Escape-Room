@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative  overflow-hidden bg-[#011827]">
+    <section className="relative overflow-hidden bg-[#011827]">
       <Image
         src="/hero.png"
         alt="Hero"
@@ -22,19 +23,27 @@ export default function Hero() {
         </h1>
 
         <p className="mt-6 max-w-2xl text-white/75 text-lg">
-          Solve puzzles. Crack passwords. <br/> Escape before the timer reaches zero.
+          Solve puzzles. Crack passwords. <br /> Escape before the timer reaches zero.
         </p>
 
         <div className="mt-10 flex flex-col gap-5 md:flex-row">
-          <button className="group relative overflow-hidden cursor-pointer rounded border border-cyan-300 bg-cyan-300 px-10 py-4 font-bold text-[#011827] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(138,207,229,.45)]">
+
+          <Link
+            href="/challenges"
+            className="group relative overflow-hidden cursor-pointer rounded border border-cyan-300 bg-cyan-300 px-10 py-4 font-bold text-[#011827] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(138,207,229,.45)]"
+          >
             <span className="relative z-10">Play Online</span>
             <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-500 group-hover:translate-x-full" />
-          </button>
+          </Link>
 
-          <button className="group relative overflow-hidden cursor-pointer rounded border border-red-500 bg-[#E3170A] px-10 py-4 font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(227,23,10,.45)]">
+          <Link
+            href="/challenges"
+            className="group relative overflow-hidden cursor-pointer rounded border border-red-500 bg-[#E3170E] px-10 py-4 font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(227,23,10,.45)]"
+          >
             <span className="relative z-10">Play On-site</span>
             <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-500 group-hover:translate-x-full" />
-          </button>
+          </Link>
+
         </div>
       </div>
     </section>

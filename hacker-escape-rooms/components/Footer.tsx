@@ -29,8 +29,8 @@ export default function Footer() {
           </h4>
 
           {[
-            ["Play online", "/"],
-            ["Play on-site", "/"],
+            ["Play online", "/challenges"],
+            ["Play on-site", "/challenges"],
             ["The story", "/story"],
             ["Contact us", "/contact"],
           ].map(([label, href]) => (

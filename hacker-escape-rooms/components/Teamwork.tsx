@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Story from "./Story";
+import Link from "next/link";
 
 export default function Teamwork() {
   return (
@@ -32,21 +33,21 @@ export default function Teamwork() {
                 problem-solving under pressure.
               </p>
 
-              <button
+              <Link
+                href="/challenges"
                 className="
-                group relative mt-8 overflow-hidden rounded-md bg-[#E3170A]
-                px-8 py-4 font-bold text-white transition-all duration-300
-                hover:scale-105 hover:shadow-[0_0_30px_rgba(227,23,10,.45)]
-                cursor-pointer
-              "
+    group relative mt-8 inline-block overflow-hidden rounded-md bg-[#E3170E]
+    px-8 py-4 font-bold text-white transition-all duration-300
+    hover:scale-105 hover:shadow-[0_0_30px_rgba(227,23,10,.45)]
+  "
               >
                 <span className="relative z-10">Book on-site today</span>
                 <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-500 group-hover:translate-x-full" />
-              </button>
+              </Link>
             </div>
           </div>
         </div>
-        <Story/>
+        <Story />
 
         <div className="relative h-[700px] w-full overflow-hidden">
           <Image
@@ -69,17 +70,17 @@ export default function Teamwork() {
                 home or on-site.
               </p>
 
-              <button
+              <Link
+                href="/challenges"
                 className="
-                group relative mt-8 overflow-hidden rounded-md bg-[#E3170A]
-                px-8 py-4 font-bold text-white transition-all duration-300
-                hover:scale-105 hover:shadow-[0_0_30px_rgba(227,23,10,.45)]
-                cursor-pointer
-                "
+    group relative mt-8 inline-block overflow-hidden rounded-md bg-[#E3170A]
+    px-8 py-4 font-bold text-white transition-all duration-300
+    hover:scale-105 hover:shadow-[0_0_30px_rgba(227,23,10,.45)]
+  "
               >
                 <span className="relative z-10">See all challenges</span>
                 <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-500 group-hover:translate-x-full" />
-              </button>
+              </Link>
             </div>
           </div>
         </div>

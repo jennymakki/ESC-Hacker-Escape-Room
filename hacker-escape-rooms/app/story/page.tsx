@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function StoryPage() {
   return (
@@ -20,8 +21,6 @@ export default function StoryPage() {
 
         <div className="absolute left-0 top-0 flex h-full items-center px-10 md:px-24">
           <div className="max-w-xl rounded-xl border border-cyan-400/20 bg-black/40 p-8 backdrop-blur-xl">
-
-
             <h1 className="mt-4 text-3xl font-bold md:text-4xl">
               Hacker Escape Rooms
             </h1>
@@ -31,7 +30,6 @@ export default function StoryPage() {
               turn hacking, cybersecurity and storytelling into real-world
               experiences.
             </p>
-
           </div>
         </div>
       </section>
@@ -71,11 +69,13 @@ export default function StoryPage() {
                 Custom software, electronics and puzzle design combine to create
                 immersive missions that test teamwork and creativity.
               </p>
-
-              <button className="cursor-pointer group relative mt-8 overflow-hidden rounded-md bg-[#E3170A] px-8 py-4 font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(227,23,10,.45)]">
+              <Link
+                href="/challenges"
+                className="cursor-pointer group relative mt-8 inline-block overflow-hidden rounded-md bg-[#E3170E] px-8 py-4 font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(227,23,10,.45)]"
+              >
                 <span className="relative z-10">See challenges</span>
                 <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-500 group-hover:translate-x-full" />
-              </button>
+              </Link>
             </div>
           </div>
         </div>
