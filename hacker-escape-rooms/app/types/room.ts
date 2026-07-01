@@ -3,7 +3,9 @@ export type Room = {
   title: string;
   type: "On-site" | "Online";
   participants: string;
-  text: string;
+  difficulty: "Easy" | "Medium" | "Hard";
+  duration: number;
   rating: number;
   image: string;
+  text: string;
 };

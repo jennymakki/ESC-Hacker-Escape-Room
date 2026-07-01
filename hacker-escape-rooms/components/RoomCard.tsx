@@ -1,40 +1,46 @@
+import Image from "next/image";
+import { Room } from "@/app/types/room";
+
 type RoomCardProps = {
-  title: string;
-  type: string;
-  participants: string;
-  text: string;
-  rating: number;
+  room: Room;
 };
 
-export default function RoomCard({
-  title,
-  type,
-  participants,
-  text,
-  rating,
-}: RoomCardProps) {
+export default function RoomCard({ room }: RoomCardProps) {
   return (
-    <article className="group relative min-w-[280px] md:min-w-0 overflow-hidden rounded-xl border border-cyan-400/20 bg-white/5 backdrop-blur-xl transition-all duration-300 hover:scale-[1.03] hover:border-cyan-300/40 hover:shadow-[0_0_40px_rgba(34,211,238,0.15)]">
-      <div className="h-50" />
+    <article className="group relative overflow-hidden rounded-xl border border-cyan-400/20 bg-white/5 backdrop-blur-xl transition-all duration-300 hover:scale-[1.03]">
 
-      <div className="p-5 flex flex-col gap-3 relative">
-        <h5 className="font-semibold text-white tracking-wide">
-          {title} <span className="text-cyan-300">({type})</span>
+      <div className="relative h-56">
+        <Image
+          src={room.image}
+          alt={room.title}
+          fill
+          className="object-cover"
+        />
+      </div>
+
+      <div className="p-5 space-y-3">
+        <h5 className="font-semibold text-white">
+          {room.title}
+          <span className="text-cyan-300"> ({room.type})</span>
         </h5>
 
-        <div className="flex items-center justify-between text-sm">
-          <div className="text-cyan-300">{"★".repeat(rating)}</div>
+        <p className="text-sm text-white/60">
+          {room.participants}
+        </p>
 
-          <p className="text-white/40 text-xs">{participants}</p>
+        <p className="text-sm text-white/60">
+          {room.duration} min • {room.difficulty}
+        </p>
+
+        <div className="text-cyan-300">
+          {"★".repeat(room.rating)}
         </div>
 
-        <p className="text-sm text-white/70 leading-relaxed">{text}</p>
-
-        <button className="cursor-pointer group relative overflow-hidden rounded border border-red-500 bg-[#E3170A] px-10 py-2 font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(227,23,10,.45)]">
-          <span className="relative z-10">Book this Room</span>
-          <span className="absolute  inset-0 -translate-x-full bg-white/20 transition-transform duration-500 group-hover:translate-x-full" />
-        </button>
+        <p className="text-white/70">
+          {room.text}
+        </p>
       </div>
+
     </article>
   );
 }
